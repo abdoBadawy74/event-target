@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event-target</title>
+  </head>
+  <body onclick="myFun(event)">
+    <h1>Welcome To My Website</h1>
+    <span>text</span>
+    <button>Button</button>
+    <p id="demo"></p>
+
+    <script>
+      function myFun(event) {
+        document.getElementById("demo").innerHTML = event.target.nodeName;
+      }
+    </script>
+  </body>
+</html>
